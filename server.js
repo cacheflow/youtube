@@ -5,8 +5,7 @@ var ReactDOMServer = require('react-dom/server');
 var app = express();
 var port = process.env.port || 8080;
 var VideoContainer = require('./app/js/components/VideoContainer');
-var fs = require('fs');
-var bundleJs = fs.readFileSync('./index.html', {encoding: 'utf8'});
+
 
 app.get('/', function(request, response) {
     var VideoContainerAsHtml = ReactDOMServer.renderToString(React.createElement(VideoContainer));
