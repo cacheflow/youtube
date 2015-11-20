@@ -1,0 +1,16 @@
+.body {
+  font-family: Helvetica Narrow;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.videoBox {
+  width: 200px;
+  height: 200px;
+  line-height: 80px;
+}
